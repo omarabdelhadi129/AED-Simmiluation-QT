@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>public/power.png</file>
+        <file>public/shockButton.jpeg</file>
+        <file>public/check.jpeg</file>
+        <file>public/xmark.jpeg</file>
+        <file>public/xmarkTran.png</file>
+        <file>public/aed4.png</file>
+        <file>public/aed1.png</file>
+        <file>public/aed2.png</file>
+        <file>public/aed3.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,30 @@
+{
+	"BUILD_DIR" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM",
+	"CMAKE_SOURCE_DIR" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM",
+	"INCLUDE_DIR" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/public/aed1.png",
+		"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/public/xmark.jpeg",
+		"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/public/aed4.png",
+		"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/public/check.jpeg",
+		"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/public/xmarkTran.png",
+		"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/public/aed2.png",
+		"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/public/power.png",
+		"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/public/aed3.png",
+		"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/public/shockButton.jpeg"
+	],
+	"LOCK_FILE" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/CMakeFiles/AED_SIM_autogen.dir/AutoRcc_images_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "images" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_images.cpp",
+	"RCC_EXECUTABLE" : "/Users/omarabdelhadi/Qt/6.6.0/macos/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/CMakeFiles/AED_SIM_autogen.dir/AutoRcc_images_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/images.qrc",
+	"VERBOSITY" : 0
+}

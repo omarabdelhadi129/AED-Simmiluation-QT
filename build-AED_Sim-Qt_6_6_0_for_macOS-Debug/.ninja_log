@@ -1,95 +1,24 @@
 # ninja log v5
-59	697	1702357366875765675	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
-13	57	1702357366241621394	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
+53	816	1702421511639940133	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
+12	51	1702421510879538729	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
 127	866	1701925899767561790	CMakeFiles/AED_SIM.dir/AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp.o	aa6312577697e31e
 345	1090	1702339688097949257	CMakeFiles/AED_SIM.dir/SelfTest.cpp.o	6a2487f5032d39b
-13	57	1702357366241621394	AED_SIM_autogen/timestamp	d5678b1308f402e0
+12	51	1702421510879538729	AED_SIM_autogen/timestamp	d5678b1308f402e0
 65	905	1702338358397563155	CMakeFiles/AED_SIM.dir/ShockButton.cpp.o	e678ca3936635914
-971	1186	1702357367366255939	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-13	57	1702357366241621394	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-13	57	1702357366241621394	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
+1203	1422	1702421512247847361	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
+12	51	1702421510879538729	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
+12	51	1702421510879538729	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
 76	127	1701925899032271441	AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp	b3bbb9314a2162d0
 76	127	1701925899032271441	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp	b3bbb9314a2162d0
-353	3252	1702357102735339977	CMakeFiles/AED_SIM.dir/main.cpp.o	c25e8158e4ee75ea
-59	971	1702357367149822871	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
+328	1191	1702421354713652131	CMakeFiles/AED_SIM.dir/main.cpp.o	c25e8158e4ee75ea
+53	1203	1702421512026325379	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
 59	173	1701131310390285245	CMakeFiles/AED_SIM.dir/SafteyMesures.cpp.o	306d540d66579ff6
 54	2818	1702349559457197330	CMakeFiles/AED_SIM.dir/TestCases.cpp.o	5a68be5993945ad2
 59	174	1701131310390279204	CMakeFiles/AED_SIM.dir/Display.cpp.o	cdb24d978ca1e68d
-353	3297	1702357102782315919	CMakeFiles/AED_SIM.dir/AED_SIM_autogen/mocs_compilation.cpp.o	a48c851d9bdd040b
-11	343	1702357448117969000	AED_SIM_autogen/timestamp	d5678b1308f402e0
-11	343	1702357448117969000	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-11	343	1702357448117969000	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-11	343	1702357448117969000	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-343	1021	1702357448797671635	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
-343	1144	1702357448918753974	CMakeFiles/AED_SIM.dir/main.cpp.o	c25e8158e4ee75ea
-343	1188	1702357448965402090	CMakeFiles/AED_SIM.dir/AED_SIM_autogen/mocs_compilation.cpp.o	a48c851d9bdd040b
-343	1325	1702357449102217796	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-1325	1540	1702357449317611262	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-8	48	1702357624573719207	AED_SIM_autogen/timestamp	d5678b1308f402e0
-8	48	1702357624573719207	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-8	48	1702357624573719207	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-8	48	1702357624573719207	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-50	694	1702357625214041437	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
-50	997	1702357625515295462	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-997	1103	1702357625624399893	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-12	51	1702357678296873049	AED_SIM_autogen/timestamp	d5678b1308f402e0
-12	51	1702357678296873049	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-12	51	1702357678296873049	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-12	51	1702357678296873049	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-54	1000	1702357679240982041	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-12	52	1702357701266200092	AED_SIM_autogen/timestamp	d5678b1308f402e0
-12	52	1702357701266200092	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-12	52	1702357701266200092	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-12	52	1702357701266200092	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-55	521	1702357701730536880	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
-55	835	1702357702042519422	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-835	938	1702357702148489129	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-11	50	1702357768528668651	AED_SIM_autogen/timestamp	d5678b1308f402e0
-11	50	1702357768528668651	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-11	50	1702357768528668651	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-11	50	1702357768528668651	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-53	694	1702357769168646098	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
-53	993	1702357769465574132	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-993	1210	1702357769685839242	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-11	53	1702357827898543041	AED_SIM_autogen/timestamp	d5678b1308f402e0
-11	53	1702357827898543041	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-11	53	1702357827898543041	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-11	53	1702357827898543041	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-55	728	1702357828568082432	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
-55	1019	1702357828858790351	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-1019	1123	1702357828965356295	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-18	59	1702357930756774485	AED_SIM_autogen/timestamp	d5678b1308f402e0
-18	59	1702357930756774485	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-18	59	1702357930756774485	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-18	59	1702357930756774485	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-62	1377	1702357932065187887	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-1377	1613	1702357932305860347	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-8	335	1702358686953188000	AED_SIM_autogen/timestamp	d5678b1308f402e0
-8	335	1702358686953188000	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-8	335	1702358686953188000	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-8	335	1702358686953188000	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-336	1023	1702358687641747826	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
-335	1146	1702358687765531255	CMakeFiles/AED_SIM.dir/main.cpp.o	c25e8158e4ee75ea
-335	1195	1702358687815806007	CMakeFiles/AED_SIM.dir/AED_SIM_autogen/mocs_compilation.cpp.o	a48c851d9bdd040b
-336	1323	1702358687944211396	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-1323	1564	1702358688186712681	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-21	63	1702358838163226449	AED_SIM_autogen/timestamp	d5678b1308f402e0
-21	63	1702358838163226449	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-21	63	1702358838163226449	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-21	63	1702358838163226449	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-65	1001	1702358839094821312	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
-65	1277	1702358839373234603	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-1277	1511	1702358839605627155	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-12	55	1702358965091861660	AED_SIM_autogen/timestamp	d5678b1308f402e0
-12	55	1702358965091861660	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-12	55	1702358965091861660	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-12	55	1702358965091861660	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-57	1039	1702358966069062147	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-1039	1274	1702358966307237171	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
-11	55	1702359220892839839	AED_SIM_autogen/timestamp	d5678b1308f402e0
-11	55	1702359220892839839	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-11	55	1702359220892839839	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
-11	55	1702359220892839839	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
-58	943	1702359221773409261	CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o	b0493a547e2924ce
-57	1212	1702359222043497398	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
-1212	1432	1702359222266016545	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320
+328	1244	1702421354767848340	CMakeFiles/AED_SIM.dir/AED_SIM_autogen/mocs_compilation.cpp.o	a48c851d9bdd040b
+7	44	1702421593601584595	AED_SIM_autogen/timestamp	d5678b1308f402e0
+7	44	1702421593601584595	AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
+7	44	1702421593601584595	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/timestamp	d5678b1308f402e0
+7	44	1702421593601584595	/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/mocs_compilation.cpp	d5678b1308f402e0
+46	1061	1702421594613964250	CMakeFiles/AED_SIM.dir/mainwindow.cpp.o	6c6d9a9f5392c628
+1061	1163	1702421594717729978	AED_SIM.app/Contents/MacOS/AED_SIM	a3ab4e5deef45320

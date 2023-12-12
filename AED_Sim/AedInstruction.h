@@ -17,6 +17,7 @@ signals:
     void highlightStep(int step);
     void attemptRescue();
     void makeStatusLightsRed();
+    void detectHeartBeat();
 
 public slots:
     void startInstructionCycle();

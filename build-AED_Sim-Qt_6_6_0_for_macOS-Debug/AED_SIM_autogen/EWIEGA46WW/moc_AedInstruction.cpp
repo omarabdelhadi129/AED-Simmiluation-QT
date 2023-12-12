@@ -46,12 +46,13 @@ static constexpr auto qt_meta_stringdata_CLASSAedInstructionENDCLASS = QtMocHelp
     "step",
     "attemptRescue",
     "makeStatusLightsRed",
+    "detectHeartBeat",
     "startInstructionCycle",
     "proceedToNextStep"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSAedInstructionENDCLASS_t {
-    uint offsetsAndSizes[20];
+    uint offsetsAndSizes[22];
     char stringdata0[15];
     char stringdata1[18];
     char stringdata2[1];
@@ -60,8 +61,9 @@ struct qt_meta_stringdata_CLASSAedInstructionENDCLASS_t {
     char stringdata5[5];
     char stringdata6[14];
     char stringdata7[20];
-    char stringdata8[22];
-    char stringdata9[18];
+    char stringdata8[16];
+    char stringdata9[22];
+    char stringdata10[18];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSAedInstructionENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -75,8 +77,9 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSAedInstructionENDCLASS_t qt_met
         QT_MOC_LITERAL(56, 4),  // "step"
         QT_MOC_LITERAL(61, 13),  // "attemptRescue"
         QT_MOC_LITERAL(75, 19),  // "makeStatusLightsRed"
-        QT_MOC_LITERAL(95, 21),  // "startInstructionCycle"
-        QT_MOC_LITERAL(117, 17)   // "proceedToNextStep"
+        QT_MOC_LITERAL(95, 15),  // "detectHeartBeat"
+        QT_MOC_LITERAL(111, 21),  // "startInstructionCycle"
+        QT_MOC_LITERAL(133, 17)   // "proceedToNextStep"
     },
     "AedInstruction",
     "updateStepDisplay",
@@ -86,6 +89,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSAedInstructionENDCLASS_t qt_met
     "step",
     "attemptRescue",
     "makeStatusLightsRed",
+    "detectHeartBeat",
     "startInstructionCycle",
     "proceedToNextStep"
 };
@@ -99,26 +103,28 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSAedInstructionENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       4,       // signalCount
+       5,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   50,    2, 0x06,    1 /* Public */,
-       4,    1,   53,    2, 0x06,    3 /* Public */,
-       6,    0,   56,    2, 0x06,    5 /* Public */,
-       7,    0,   57,    2, 0x06,    6 /* Public */,
+       1,    1,   56,    2, 0x06,    1 /* Public */,
+       4,    1,   59,    2, 0x06,    3 /* Public */,
+       6,    0,   62,    2, 0x06,    5 /* Public */,
+       7,    0,   63,    2, 0x06,    6 /* Public */,
+       8,    0,   64,    2, 0x06,    7 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       8,    0,   58,    2, 0x0a,    7 /* Public */,
-       9,    0,   59,    2, 0x0a,    8 /* Public */,
+       9,    0,   65,    2, 0x0a,    8 /* Public */,
+      10,    0,   66,    2, 0x0a,    9 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString,    3,
     QMetaType::Void, QMetaType::Int,    5,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -148,6 +154,8 @@ Q_CONSTINIT const QMetaObject AedInstruction::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'makeStatusLightsRed'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'detectHeartBeat'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'startInstructionCycle'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'proceedToNextStep'
@@ -166,8 +174,9 @@ void AedInstruction::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 1: _t->highlightStep((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 2: _t->attemptRescue(); break;
         case 3: _t->makeStatusLightsRed(); break;
-        case 4: _t->startInstructionCycle(); break;
-        case 5: _t->proceedToNextStep(); break;
+        case 4: _t->detectHeartBeat(); break;
+        case 5: _t->startInstructionCycle(); break;
+        case 6: _t->proceedToNextStep(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -200,6 +209,13 @@ void AedInstruction::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
                 return;
             }
         }
+        {
+            using _t = void (AedInstruction::*)();
+            if (_t _q_method = &AedInstruction::detectHeartBeat; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 4;
+                return;
+            }
+        }
     }
 }
 
@@ -222,13 +238,13 @@ int AedInstruction::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 7;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 7;
     }
     return _id;
 }
@@ -257,5 +273,11 @@ void AedInstruction::attemptRescue()
 void AedInstruction::makeStatusLightsRed()
 {
     QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+}
+
+// SIGNAL 4
+void AedInstruction::detectHeartBeat()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
 }
 QT_WARNING_POP

@@ -39,6 +39,8 @@ void AedInstruction::proceedToNextStep() {
                     emit attemptRescue();
                 });
                 return; // Early return to prevent further steps
+            } else {
+                emit detectHeartBeat();
             }
             break;
         case 4:
@@ -69,7 +71,7 @@ void AedInstruction::proceedToNextStep() {
                     currentStep = 0;
                     cycles = 0;
                     emit highlightStep(0);
-                    emit updateStepDisplay("Patient is now good.");
+                    emit updateStepDisplay("Patient is now good. Move to resting position");
                 }
             });
             return; // Return here to avoid emitting signals again at the end of the function

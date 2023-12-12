@@ -45,6 +45,7 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "message",
     "colorHex",
     "updateHeartbeatDisplay",
+    "HeartRhythm",
     "rhythm",
     "updateCheckMark",
     "status",
@@ -64,29 +65,30 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[44];
+    uint offsetsAndSizes[46];
     char stringdata0[11];
     char stringdata1[20];
     char stringdata2[1];
     char stringdata3[8];
     char stringdata4[9];
     char stringdata5[23];
-    char stringdata6[7];
-    char stringdata7[16];
-    char stringdata8[7];
-    char stringdata9[14];
-    char stringdata10[21];
-    char stringdata11[12];
-    char stringdata12[16];
-    char stringdata13[20];
-    char stringdata14[10];
-    char stringdata15[7];
-    char stringdata16[16];
-    char stringdata17[17];
-    char stringdata18[14];
-    char stringdata19[5];
-    char stringdata20[22];
-    char stringdata21[23];
+    char stringdata6[12];
+    char stringdata7[7];
+    char stringdata8[16];
+    char stringdata9[7];
+    char stringdata10[14];
+    char stringdata11[21];
+    char stringdata12[12];
+    char stringdata13[16];
+    char stringdata14[20];
+    char stringdata15[10];
+    char stringdata16[7];
+    char stringdata17[16];
+    char stringdata18[17];
+    char stringdata19[14];
+    char stringdata20[5];
+    char stringdata21[22];
+    char stringdata22[23];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -98,22 +100,23 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(32, 7),  // "message"
         QT_MOC_LITERAL(40, 8),  // "colorHex"
         QT_MOC_LITERAL(49, 22),  // "updateHeartbeatDisplay"
-        QT_MOC_LITERAL(72, 6),  // "rhythm"
-        QT_MOC_LITERAL(79, 15),  // "updateCheckMark"
-        QT_MOC_LITERAL(95, 6),  // "status"
-        QT_MOC_LITERAL(102, 13),  // "resetDisplays"
-        QT_MOC_LITERAL(116, 20),  // "setTestButtonClicked"
-        QT_MOC_LITERAL(137, 11),  // "buttonIndex"
-        QT_MOC_LITERAL(149, 15),  // "performSelfTest"
-        QT_MOC_LITERAL(165, 19),  // "onSelfTestCompleted"
-        QT_MOC_LITERAL(185, 9),  // "AedStates"
-        QT_MOC_LITERAL(195, 6),  // "result"
-        QT_MOC_LITERAL(202, 15),  // "logVoiceMessage"
-        QT_MOC_LITERAL(218, 16),  // "onShockDelivered"
-        QT_MOC_LITERAL(235, 13),  // "highlightStep"
-        QT_MOC_LITERAL(249, 4),  // "step"
-        QT_MOC_LITERAL(254, 21),  // "handleOnButtonPressed"
-        QT_MOC_LITERAL(276, 22)   // "handleOnButtonReleased"
+        QT_MOC_LITERAL(72, 11),  // "HeartRhythm"
+        QT_MOC_LITERAL(84, 6),  // "rhythm"
+        QT_MOC_LITERAL(91, 15),  // "updateCheckMark"
+        QT_MOC_LITERAL(107, 6),  // "status"
+        QT_MOC_LITERAL(114, 13),  // "resetDisplays"
+        QT_MOC_LITERAL(128, 20),  // "setTestButtonClicked"
+        QT_MOC_LITERAL(149, 11),  // "buttonIndex"
+        QT_MOC_LITERAL(161, 15),  // "performSelfTest"
+        QT_MOC_LITERAL(177, 19),  // "onSelfTestCompleted"
+        QT_MOC_LITERAL(197, 9),  // "AedStates"
+        QT_MOC_LITERAL(207, 6),  // "result"
+        QT_MOC_LITERAL(214, 15),  // "logVoiceMessage"
+        QT_MOC_LITERAL(230, 16),  // "onShockDelivered"
+        QT_MOC_LITERAL(247, 13),  // "highlightStep"
+        QT_MOC_LITERAL(261, 4),  // "step"
+        QT_MOC_LITERAL(266, 21),  // "handleOnButtonPressed"
+        QT_MOC_LITERAL(288, 22)   // "handleOnButtonReleased"
     },
     "MainWindow",
     "updateStatusDisplay",
@@ -121,6 +124,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "message",
     "colorHex",
     "updateHeartbeatDisplay",
+    "HeartRhythm",
     "rhythm",
     "updateCheckMark",
     "status",
@@ -158,28 +162,28 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
        1,    2,   86,    2, 0x0a,    1 /* Public */,
        5,    1,   91,    2, 0x0a,    4 /* Public */,
-       7,    1,   94,    2, 0x0a,    6 /* Public */,
-       9,    0,   97,    2, 0x0a,    8 /* Public */,
-      10,    1,   98,    2, 0x0a,    9 /* Public */,
-      12,    0,  101,    2, 0x0a,   11 /* Public */,
-      13,    1,  102,    2, 0x0a,   12 /* Public */,
-      16,    1,  105,    2, 0x0a,   14 /* Public */,
-      17,    0,  108,    2, 0x0a,   16 /* Public */,
-      18,    1,  109,    2, 0x0a,   17 /* Public */,
-      20,    0,  112,    2, 0x08,   19 /* Private */,
-      21,    0,  113,    2, 0x08,   20 /* Private */,
+       8,    1,   94,    2, 0x0a,    6 /* Public */,
+      10,    0,   97,    2, 0x0a,    8 /* Public */,
+      11,    1,   98,    2, 0x0a,    9 /* Public */,
+      13,    0,  101,    2, 0x0a,   11 /* Public */,
+      14,    1,  102,    2, 0x0a,   12 /* Public */,
+      17,    1,  105,    2, 0x0a,   14 /* Public */,
+      18,    0,  108,    2, 0x0a,   16 /* Public */,
+      19,    1,  109,    2, 0x0a,   17 /* Public */,
+      21,    0,  112,    2, 0x08,   19 /* Private */,
+      22,    0,  113,    2, 0x08,   20 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QString, QMetaType::QString,    3,    4,
-    QMetaType::Void, QMetaType::QString,    6,
-    QMetaType::Void, QMetaType::Bool,    8,
+    QMetaType::Void, 0x80000000 | 6,    7,
+    QMetaType::Void, QMetaType::Bool,    9,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,   11,
+    QMetaType::Void, QMetaType::Int,   12,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 14,   15,
+    QMetaType::Void, 0x80000000 | 15,   16,
     QMetaType::Void, QMetaType::QString,    3,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,   19,
+    QMetaType::Void, QMetaType::Int,   20,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -201,7 +205,7 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'updateHeartbeatDisplay'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<HeartRhythm, std::false_type>,
         // method 'updateCheckMark'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<bool, std::false_type>,
@@ -238,7 +242,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         (void)_t;
         switch (_id) {
         case 0: _t->updateStatusDisplay((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
-        case 1: _t->updateHeartbeatDisplay((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->updateHeartbeatDisplay((*reinterpret_cast< std::add_pointer_t<HeartRhythm>>(_a[1]))); break;
         case 2: _t->updateCheckMark((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
         case 3: _t->resetDisplays(); break;
         case 4: _t->setTestButtonClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;

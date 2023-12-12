@@ -6,6 +6,7 @@
 #include <QLabel>
 #include <QTimer>
 #include <QStyle>
+#include <QRandomGenerator>
 #include <QRegularExpression>
 #include "SelfTest.h"
 #include "AedStates.h"
@@ -22,12 +23,18 @@ class MainWindow : public QMainWindow
 
 public:
     enum LightColor { White, Yellow, Red };
+    enum HeartRhythm {
+        Normal,
+        Arrhythmia1,
+        Arrhythmia2,
+        Arrhythmia3
+    };
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 public slots:
     void updateStatusDisplay(const QString& message, const QString& colorHex);
-    void updateHeartbeatDisplay(const QString& rhythm);
+    void updateHeartbeatDisplay(HeartRhythm rhythm);
     void updateCheckMark(bool status);
     void resetDisplays();
     void setTestButtonClicked(int buttonIndex);
@@ -53,6 +60,13 @@ private:
     AedInstruction *aedInstruction;
     ShockButton *shockButton;
     void toggleStatusLights(LightColor color, const QList<QPushButton*>& lights);
+    //Hard coded heart rythms for ecg readings
+    const QMap<HeartRhythm, QString> heartRhythms = {
+        { Normal, "__/\\_/\\___/\\__/\\____/\\_/\\______/\\_____" },
+        { Arrhythmia1, "__/\\___/\\___/\\__/\\__/\\___/\\__/\\____" },
+        { Arrhythmia2, "__/\\__/\\_/\\____/\\__/\\____/\\_/\\_____" },
+        { Arrhythmia3, "__/\\_/\\___/\\______/\\___/\\__/\\_______" }
+    };
 };
 
 #endif // MAINWINDOW_H

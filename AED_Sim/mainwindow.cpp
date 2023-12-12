@@ -105,6 +105,23 @@ MainWindow::MainWindow(QWidget *parent)
         toggleStatusLights(Red, statusLights);
         currentLightColor = Red;
         updateCheckMark(false);
+        ui->heartBeatDisplay->setText("_/\\________________________/\\_____");
+        ui->heartBeatDisplay->setStyleSheet(
+            "font-size: 36pt;"
+            "font-weight: 400;"
+            "color: #ff2600"
+            );
+        ui->heartBeatDisplay->setAlignment(Qt::AlignCenter);
+
+    });
+
+    //Connect reading heart beat slot
+    connect(aedInstruction, &AedInstruction::detectHeartBeat, this, [this](){
+        QList<HeartRhythm> keys = heartRhythms.keys();
+        int randomIndex = QRandomGenerator::global()->bounded(keys.size());
+        HeartRhythm randomRhythm = keys.at(randomIndex);
+
+        updateHeartbeatDisplay(randomRhythm);
     });
 
     //Connect shock button activation slot
@@ -209,7 +226,6 @@ void MainWindow::onSelfTestCompleted(AedStates result) {
     if (isOn && selfTestInProgress){
         switch (result) {
             case AedStates::SUCCESS:
-                updateHeartbeatDisplay("__/\\_/\\___/\\__/\\____/\\_/\\______/\\_____");
                 updateStatusDisplay("READY", "008007");
                 logVoiceMessage("Self-test completed successfully.");
                 selfTestInProgress = false;
@@ -223,7 +239,6 @@ void MainWindow::onSelfTestCompleted(AedStates result) {
                 break;
             case AedStates::NON_SHOCKABLE:
                 // Handle the NON_SHOCKABLE case
-                updateHeartbeatDisplay("__/\\_/\\___/\\__/\\____/\\_/\\______/\\_____");
                 updateStatusDisplay("READY", "008007");
                 logVoiceMessage("Self-test completed successfully.");
                 selfTestInProgress = false;
@@ -231,7 +246,6 @@ void MainWindow::onSelfTestCompleted(AedStates result) {
                 break;
             case AedStates::WEAK_COMPRESSIONS:
                 // Handle the WEAK_COMPRESSION case
-                updateHeartbeatDisplay("__/\\_/\\___/\\__/\\____/\\_/\\______/\\_____");
                 updateStatusDisplay("READY", "008007");
                 logVoiceMessage("Self-test completed successfully.");
                 selfTestInProgress = false;
@@ -252,21 +266,32 @@ void MainWindow::updateStatusDisplay(const QString& message, const QString& colo
 }
 
 
+void MainWindow::updateHeartbeatDisplay(HeartRhythm rhythm) {
+    // Retrieve the string pattern corresponding to the rhythm enum
+    QString rhythmPattern = heartRhythms[rhythm];
 
-void MainWindow::updateHeartbeatDisplay(const QString& rhythm) {
-    // Update the heartbeat display with the rhythm
-    ui->heartBeatDisplay->setText(rhythm);
+    // Set the text of the heartBeatDisplay label to the rhythm pattern
+    ui->heartBeatDisplay->setText(rhythmPattern);
+
+    // Set the other properties of the heartBeatDisplay label
+    ui->heartBeatDisplay->setStyleSheet(
+        "font-size: 36pt;"
+        "font-weight: 400;"
+        "color: #008007;"
+        );
+    ui->heartBeatDisplay->setAlignment(Qt::AlignCenter);
+}
+
+
+void MainWindow::resetDisplays(){
+    //Displays
+    ui->heartBeatDisplay->setText("");
     ui->heartBeatDisplay->setStyleSheet(
         "font-size: 36pt;"
         "font-weight: 400;"
         "color: #008007"
         );
     ui->heartBeatDisplay->setAlignment(Qt::AlignCenter);
-}
-
-void MainWindow::resetDisplays(){
-    //Displays
-    updateHeartbeatDisplay("");
     updateStatusDisplay("OFF", "ff2600");
     //Lights
     toggleStatusLights(White, statusLights);
@@ -347,7 +372,12 @@ void MainWindow::setTestButtonClicked(int buttonIndex) {
 }
 
 void MainWindow::onShockDelivered() {
-    // Handle the shock delivery UI update
+    // Get random heart rythm
+    QList<HeartRhythm> keys = heartRhythms.keys();
+    int randomIndex = QRandomGenerator::global()->bounded(keys.size());
+    HeartRhythm randomRhythm = keys.at(randomIndex);
+
+    updateHeartbeatDisplay(randomRhythm);
     logVoiceMessage("RING! RING! CLEAR");
     logVoiceMessage("SHOCKED");
     QList<QPushButton*> statusLights = { ui->statusLight1, ui->statusLight2, ui->statusLight3, ui->statusLight4 };

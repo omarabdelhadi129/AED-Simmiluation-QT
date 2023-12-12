@@ -70,6 +70,38 @@ build CMakeFiles/AED_SIM.dir/mainwindow.cpp.o: CXX_COMPILER__AED_SIM_Debug /User
   OBJECT_DIR = CMakeFiles/AED_SIM.dir
   OBJECT_FILE_DIR = CMakeFiles/AED_SIM.dir
 
+build CMakeFiles/AED_SIM.dir/SelfTest.cpp.o: CXX_COMPILER__AED_SIM_Debug /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/SelfTest.cpp || cmake_object_order_depends_target_AED_SIM
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/AED_SIM.dir/SelfTest.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -std=gnu++17
+  INCLUDES = -I"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/include" -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Headers -iframework /Users/omarabdelhadi/Qt/6.6.0/macos/lib -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/mkspecs/macx-clang -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/include -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/AED_SIM.dir
+  OBJECT_FILE_DIR = CMakeFiles/AED_SIM.dir
+
+build CMakeFiles/AED_SIM.dir/ShockButton.cpp.o: CXX_COMPILER__AED_SIM_Debug /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/ShockButton.cpp || cmake_object_order_depends_target_AED_SIM
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/AED_SIM.dir/ShockButton.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -std=gnu++17
+  INCLUDES = -I"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/include" -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Headers -iframework /Users/omarabdelhadi/Qt/6.6.0/macos/lib -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/mkspecs/macx-clang -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/include -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/AED_SIM.dir
+  OBJECT_FILE_DIR = CMakeFiles/AED_SIM.dir
+
+build CMakeFiles/AED_SIM.dir/TestCases.cpp.o: CXX_COMPILER__AED_SIM_Debug /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/TestCases.cpp || cmake_object_order_depends_target_AED_SIM
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/AED_SIM.dir/TestCases.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -std=gnu++17
+  INCLUDES = -I"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/include" -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Headers -iframework /Users/omarabdelhadi/Qt/6.6.0/macos/lib -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/mkspecs/macx-clang -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/include -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/AED_SIM.dir
+  OBJECT_FILE_DIR = CMakeFiles/AED_SIM.dir
+
+build CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o: CXX_COMPILER__AED_SIM_Debug /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/AedInstruction.cpp || cmake_object_order_depends_target_AED_SIM
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -std=gnu++17
+  INCLUDES = -I"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/include" -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Headers -iframework /Users/omarabdelhadi/Qt/6.6.0/macos/lib -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/mkspecs/macx-clang -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/include -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/AED_SIM.dir
+  OBJECT_FILE_DIR = CMakeFiles/AED_SIM.dir
+
 build CMakeFiles/AED_SIM.dir/AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp.o: CXX_COMPILER__AED_SIM_Debug /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp || cmake_object_order_depends_target_AED_SIM
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/AED_SIM.dir/AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp.o.d
@@ -86,7 +118,7 @@ build CMakeFiles/AED_SIM.dir/AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp.o: CXX_CO
 #############################################
 # Link the executable AED_SIM.app/Contents/MacOS/AED_SIM
 
-build AED_SIM.app/Contents/MacOS/AED_SIM: CXX_EXECUTABLE_LINKER__AED_SIM_Debug CMakeFiles/AED_SIM.dir/AED_SIM_autogen/mocs_compilation.cpp.o CMakeFiles/AED_SIM.dir/main.cpp.o CMakeFiles/AED_SIM.dir/mainwindow.cpp.o CMakeFiles/AED_SIM.dir/AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp.o | /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/QtCore || AED_SIM_autogen AED_SIM_autogen_timestamp_deps
+build AED_SIM.app/Contents/MacOS/AED_SIM: CXX_EXECUTABLE_LINKER__AED_SIM_Debug CMakeFiles/AED_SIM.dir/AED_SIM_autogen/mocs_compilation.cpp.o CMakeFiles/AED_SIM.dir/main.cpp.o CMakeFiles/AED_SIM.dir/mainwindow.cpp.o CMakeFiles/AED_SIM.dir/SelfTest.cpp.o CMakeFiles/AED_SIM.dir/ShockButton.cpp.o CMakeFiles/AED_SIM.dir/TestCases.cpp.o CMakeFiles/AED_SIM.dir/AedInstruction.cpp.o CMakeFiles/AED_SIM.dir/AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp.o | /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/QtCore || AED_SIM_autogen AED_SIM_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/omarabdelhadi/Qt/6.6.0/macos/lib  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/QtGui  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal
   LINK_PATH = -F/Users/omarabdelhadi/Qt/6.6.0/macos/lib
@@ -188,7 +220,7 @@ build AED_SIM_autogen/timestamp AED_SIM_autogen/mocs_compilation.cpp | ${cmake_n
 #############################################
 # Custom command for AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp
 
-build AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp | ${cmake_ninja_workdir}AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp: CUSTOM_COMMAND /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/images.qrc CMakeFiles/AED_SIM_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/aed1.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/xmark.jpeg /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/aed4.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/check.jpeg /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/xmarkTran.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/aed2.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/power.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/aed3.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/shockButton.jpeg /Users/omarabdelhadi/Qt/6.6.0/macos/./libexec/rcc || AED_SIM_autogen AED_SIM_autogen_timestamp_deps
+build AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp | ${cmake_ninja_workdir}AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp: CUSTOM_COMMAND /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/images.qrc CMakeFiles/AED_SIM_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/aed1.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/xmark.jpeg /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/aed4.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/check.jpeg /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/aed5.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/xmarkTran.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/aed2.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/power.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/aed3.png /Users/omarabdelhadi/Desktop/COMP$ 3004/project/COMP-3004/AED_SIM/public/shockButton.jpeg /Users/omarabdelhadi/Qt/6.6.0/macos/./libexec/rcc || AED_SIM_autogen AED_SIM_autogen_timestamp_deps
   COMMAND = cd "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug" && /Users/omarabdelhadi/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autorcc /Users/omarabdelhadi/Desktop/COMP\ 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/CMakeFiles/AED_SIM_autogen.dir/AutoRcc_images_EWIEGA46WW_Info.json Debug
   DESC = Automatic RCC for images.qrc
   restat = 1
@@ -197,7 +229,7 @@ build AED_SIM_autogen/EWIEGA46WW/qrc_images.cpp | ${cmake_ninja_workdir}AED_SIM_
 #############################################
 # Phony custom command for CMakeFiles/AED_SIM_autogen_timestamp_deps
 
-build CMakeFiles/AED_SIM_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/AED_SIM_autogen_timestamp_deps: phony /Users/omarabdelhadi/Qt/6.6.0/macos/./libexec/uic /Users/omarabdelhadi/Qt/6.6.0/macos/./libexec/moc /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
+build CMakeFiles/AED_SIM_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/AED_SIM_autogen_timestamp_deps: phony /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/omarabdelhadi/Qt/6.6.0/macos/./libexec/moc /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/omarabdelhadi/Qt/6.6.0/macos/./libexec/uic
 
 
 #############################################

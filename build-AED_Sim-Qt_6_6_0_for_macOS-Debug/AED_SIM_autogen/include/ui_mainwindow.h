@@ -28,30 +28,34 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QGroupBox *systemDisplay;
-    QPushButton *downButton_2;
-    QPushButton *helpButton;
-    QTextEdit *elevatorNumber;
-    QPushButton *upButton_3;
-    QPushButton *downButton_3;
-    QPushButton *downButton_4;
-    QPushButton *downButton_5;
-    QPushButton *upButton_4;
-    QPushButton *upButton_5;
+    QPushButton *statusLight4;
+    QPushButton *shockButton;
+    QTextEdit *statusDisplay;
+    QPushButton *onButton;
+    QPushButton *statusLight3;
+    QPushButton *statusLight1;
+    QPushButton *statusLight2;
+    QPushButton *checkMark;
+    QPushButton *xMark;
     QTextEdit *elevatorNumber_2;
-    QTextEdit *elevatorNumber_3;
+    QTextEdit *heartBeatDisplay;
     QGroupBox *systemDisplay_2;
-    QPushButton *powerButton;
-    QPushButton *powerButton_2;
+    QPushButton *normalButton;
+    QPushButton *nonShockableButton;
+    QPushButton *weekCompressionButton;
+    QPushButton *batteryButton;
     QPushButton *upButton_6;
     QPushButton *upButton_7;
     QPushButton *upButton_8;
     QPushButton *upButton_9;
-    QPushButton *downButton_8;
-    QPushButton *downButton_9;
-    QPushButton *downButton_10;
-    QPushButton *downButton_11;
+    QPushButton *step1Light;
+    QPushButton *step5Light;
+    QPushButton *step2Light;
+    QPushButton *step4Light;
     QGroupBox *consoleView;
     QPlainTextEdit *consoleText;
+    QPushButton *upButton_10;
+    QPushButton *step3Light;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -59,13 +63,13 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(1029, 709);
+        MainWindow->resize(1029, 786);
         MainWindow->setAutoFillBackground(false);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         systemDisplay = new QGroupBox(centralwidget);
         systemDisplay->setObjectName("systemDisplay");
-        systemDisplay->setGeometry(QRect(0, -30, 1011, 641));
+        systemDisplay->setGeometry(QRect(0, -30, 1031, 771));
         systemDisplay->setStyleSheet(QString::fromUtf8("\n"
 "QGroupBox {\n"
 "    background-color: rgb(224, 255, 233);\n"
@@ -80,20 +84,32 @@ public:
 ""));
         systemDisplay->setAlignment(Qt::AlignCenter);
         systemDisplay->setFlat(false);
-        downButton_2 = new QPushButton(systemDisplay);
-        downButton_2->setObjectName("downButton_2");
-        downButton_2->setGeometry(QRect(540, 350, 31, 31));
-        downButton_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 15px; /* Adjust as necessary to make it circular */\n"
-"    border: 1px solid #000; /* Optional: adds a border */\n"
-"        background-color: white;\n"
+        statusLight4 = new QPushButton(systemDisplay);
+        statusLight4->setObjectName("statusLight4");
+        statusLight4->setGeometry(QRect(540, 500, 31, 31));
+        statusLight4->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"yellow\"] {\n"
+"    background-color: yellow;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"red\"] {\n"
+"    background-color: red;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"white\"] {\n"
+"    background-color: white;\n"
 "}\n"
 ""));
-        downButton_2->setIconSize(QSize(42, 42));
-        helpButton = new QPushButton(systemDisplay);
-        helpButton->setObjectName("helpButton");
-        helpButton->setGeometry(QRect(420, 390, 151, 121));
-        helpButton->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 0, 0, 0.8);\n"
+        statusLight4->setIconSize(QSize(42, 42));
+        shockButton = new QPushButton(systemDisplay);
+        shockButton->setObjectName("shockButton");
+        shockButton->setGeometry(QRect(420, 540, 151, 121));
+        shockButton->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 0, 0, 0.8);\n"
 "border: none;\n"
 "color: black;\n"
 "padding: 15px 32px;\n"
@@ -108,114 +124,165 @@ public:
 ""));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/public/shockButton.jpeg"), QSize(), QIcon::Normal, QIcon::Off);
-        helpButton->setIcon(icon);
-        helpButton->setIconSize(QSize(100, 100));
-        elevatorNumber = new QTextEdit(systemDisplay);
-        elevatorNumber->setObjectName("elevatorNumber");
-        elevatorNumber->setGeometry(QRect(310, 210, 371, 131));
-        elevatorNumber->setStyleSheet(QString::fromUtf8("display: flex;\n"
+        shockButton->setIcon(icon);
+        shockButton->setIconSize(QSize(100, 100));
+        statusDisplay = new QTextEdit(systemDisplay);
+        statusDisplay->setObjectName("statusDisplay");
+        statusDisplay->setGeometry(QRect(300, 330, 401, 151));
+        statusDisplay->setStyleSheet(QString::fromUtf8("display: flex;\n"
 "text-align: center;\n"
 "justify-content: center;\n"
 "align-contnet: center;"));
-        upButton_3 = new QPushButton(systemDisplay);
-        upButton_3->setObjectName("upButton_3");
-        upButton_3->setGeometry(QRect(920, 40, 71, 61));
-        upButton_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 15px; /* Adjust as necessary to make it circular */\n"
-"    border: 1px solid #000; /* Optional: adds a border */\n"
-"        background-color: white;\n"
-"        background-size: cover;\n"
-"        display: flex;\n"
-"        justify-content: center;\n"
-"        align-items: center;\n"
+        onButton = new QPushButton(systemDisplay);
+        onButton->setObjectName("onButton");
+        onButton->setGeometry(QRect(920, 40, 71, 61));
+        onButton->setStyleSheet(QString::fromUtf8("QPushButton#onButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"    background-size: cover;\n"
+"    display: flex;\n"
+"    justify-content: center;\n"
+"    align-items: center;\n"
 "}\n"
+"\n"
+"QPushButton#onButton[pressed=\"true\"] {\n"
+"    border: 2px solid yellow;\n"
+"}\n"
+"\n"
 ""));
         QIcon icon1;
         icon1.addFile(QString::fromUtf8(":/public/power.png"), QSize(), QIcon::Normal, QIcon::Off);
-        upButton_3->setIcon(icon1);
-        upButton_3->setIconSize(QSize(42, 42));
-        downButton_3 = new QPushButton(systemDisplay);
-        downButton_3->setObjectName("downButton_3");
-        downButton_3->setGeometry(QRect(500, 350, 31, 31));
-        downButton_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 15px; /* Adjust as necessary to make it circular */\n"
-"    border: 1px solid #000; /* Optional: adds a border */\n"
-"        background-color: white;\n"
+        onButton->setIcon(icon1);
+        onButton->setIconSize(QSize(42, 42));
+        statusLight3 = new QPushButton(systemDisplay);
+        statusLight3->setObjectName("statusLight3");
+        statusLight3->setGeometry(QRect(500, 500, 31, 31));
+        statusLight3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"yellow\"] {\n"
+"    background-color: yellow;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"red\"] {\n"
+"    background-color: red;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"white\"] {\n"
+"    background-color: white;\n"
 "}\n"
 ""));
-        downButton_3->setIconSize(QSize(42, 42));
-        downButton_4 = new QPushButton(systemDisplay);
-        downButton_4->setObjectName("downButton_4");
-        downButton_4->setGeometry(QRect(420, 350, 31, 31));
-        downButton_4->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 15px; /* Adjust as necessary to make it circular */\n"
-"    border: 1px solid #000; /* Optional: adds a border */\n"
-"        background-color: white;\n"
+        statusLight3->setIconSize(QSize(42, 42));
+        statusLight1 = new QPushButton(systemDisplay);
+        statusLight1->setObjectName("statusLight1");
+        statusLight1->setGeometry(QRect(420, 500, 31, 31));
+        statusLight1->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"yellow\"] {\n"
+"    background-color: yellow;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"red\"] {\n"
+"    background-color: red;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"white\"] {\n"
+"    background-color: white;\n"
 "}\n"
 ""));
-        downButton_4->setIconSize(QSize(42, 42));
-        downButton_5 = new QPushButton(systemDisplay);
-        downButton_5->setObjectName("downButton_5");
-        downButton_5->setGeometry(QRect(460, 350, 31, 31));
-        downButton_5->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 15px; /* Adjust as necessary to make it circular */\n"
-"    border: 1px solid #000; /* Optional: adds a border */\n"
-"        background-color: white;\n"
+        statusLight1->setIconSize(QSize(42, 42));
+        statusLight2 = new QPushButton(systemDisplay);
+        statusLight2->setObjectName("statusLight2");
+        statusLight2->setGeometry(QRect(460, 500, 31, 31));
+        statusLight2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"yellow\"] {\n"
+"    background-color: yellow;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"red\"] {\n"
+"    background-color: red;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"white\"] {\n"
+"    background-color: white;\n"
 "}\n"
 ""));
-        downButton_5->setIconSize(QSize(42, 42));
-        upButton_4 = new QPushButton(systemDisplay);
-        upButton_4->setObjectName("upButton_4");
-        upButton_4->setGeometry(QRect(10, 40, 81, 61));
-        upButton_4->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 10px; /* Adjust as necessary to make it circular */\n"
-"        background-color: white;\n"
-"        background-size: cover;\n"
-"        display: flex;\n"
-"        justify-content: center;\n"
-"        align-items: center;\n"
+        statusLight2->setIconSize(QSize(42, 42));
+        checkMark = new QPushButton(systemDisplay);
+        checkMark->setObjectName("checkMark");
+        checkMark->setGeometry(QRect(10, 40, 81, 61));
+        checkMark->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 10px;\n"
+"    background-color: white;\n"
+"    background-size: cover;\n"
+"    display: flex;\n"
+"    justify-content: center;\n"
+"    align-items: center;\n"
+"    border: 2px solid transparent;\n"
 "}\n"
+"\n"
+"QPushButton[on=\"true\"] {\n"
+"    border: 4px solid green; \n"
+"}\n"
+"\n"
 ""));
         QIcon icon2;
         icon2.addFile(QString::fromUtf8(":/public/check.jpeg"), QSize(), QIcon::Normal, QIcon::Off);
-        upButton_4->setIcon(icon2);
-        upButton_4->setIconSize(QSize(60, 60));
-        upButton_5 = new QPushButton(systemDisplay);
-        upButton_5->setObjectName("upButton_5");
-        upButton_5->setGeometry(QRect(100, 40, 81, 61));
-        upButton_5->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        checkMark->setIcon(icon2);
+        checkMark->setIconSize(QSize(60, 60));
+        xMark = new QPushButton(systemDisplay);
+        xMark->setObjectName("xMark");
+        xMark->setGeometry(QRect(100, 40, 81, 61));
+        xMark->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    border-radius: 10px;\n"
-"        background-color: rgb(66, 67, 67);\n"
-"\n"
-"        background-size: cover;\n"
-"	\n"
-"        display: flex;\n"
-"        justify-content: center;\n"
-"        align-items: center;\n"
+"    background-color: white;\n"
+"    background-size: cover;\n"
+"    display: flex;\n"
+"    justify-content: center;\n"
+"    align-items: center;\n"
+"    border: 2px solid transparent;\n"
 "}\n"
+"\n"
+"QPushButton[on=\"true\"] {\n"
+"    border: 4px solid red; \n"
+"}\n"
+"\n"
 ""));
         QIcon icon3;
         icon3.addFile(QString::fromUtf8(":/public/xmarkTran.png"), QSize(), QIcon::Normal, QIcon::Off);
-        upButton_5->setIcon(icon3);
-        upButton_5->setIconSize(QSize(60, 60));
+        xMark->setIcon(icon3);
+        xMark->setIconSize(QSize(60, 60));
         elevatorNumber_2 = new QTextEdit(systemDisplay);
         elevatorNumber_2->setObjectName("elevatorNumber_2");
-        elevatorNumber_2->setGeometry(QRect(390, 10, 221, 101));
+        elevatorNumber_2->setGeometry(QRect(-60, 640, 221, 101));
         elevatorNumber_2->setStyleSheet(QString::fromUtf8("display: flex;\n"
 "text-align: center;\n"
 "justify-content: center;\n"
 "align-contnet: center;\n"
 "background-color: transparent;"));
-        elevatorNumber_3 = new QTextEdit(systemDisplay);
-        elevatorNumber_3->setObjectName("elevatorNumber_3");
-        elevatorNumber_3->setGeometry(QRect(180, 100, 641, 81));
-        elevatorNumber_3->setStyleSheet(QString::fromUtf8("display: flex;\n"
+        heartBeatDisplay = new QTextEdit(systemDisplay);
+        heartBeatDisplay->setObjectName("heartBeatDisplay");
+        heartBeatDisplay->setGeometry(QRect(200, 40, 641, 81));
+        heartBeatDisplay->setStyleSheet(QString::fromUtf8("display: flex;\n"
 "text-align: center;\n"
 "justify-content: center;\n"
 "align-contnet: center;"));
         systemDisplay_2 = new QGroupBox(systemDisplay);
         systemDisplay_2->setObjectName("systemDisplay_2");
-        systemDisplay_2->setGeometry(QRect(900, 530, 111, 111));
+        systemDisplay_2->setGeometry(QRect(500, 700, 531, 71));
         systemDisplay_2->setStyleSheet(QString::fromUtf8("\n"
 "QGroupBox {\n"
 "    background-color: #A9A9A9;\n"
@@ -231,10 +298,11 @@ public:
 ""));
         systemDisplay_2->setAlignment(Qt::AlignCenter);
         systemDisplay_2->setFlat(false);
-        powerButton = new QPushButton(systemDisplay_2);
-        powerButton->setObjectName("powerButton");
-        powerButton->setGeometry(QRect(10, 30, 91, 31));
-        powerButton->setStyleSheet(QString::fromUtf8("background-color: rgb(199, 199, 199);\n"
+        normalButton = new QPushButton(systemDisplay_2);
+        normalButton->setObjectName("normalButton");
+        normalButton->setGeometry(QRect(10, 30, 81, 31));
+        normalButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"  background-color: rgb(199, 199, 199);\n"
 "  border: none;\n"
 "  color: black;\n"
 "  text-align: center;\n"
@@ -243,11 +311,18 @@ public:
 "  font-size: 16px;\n"
 "  border: 1px solid black;\n"
 "  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);\n"
-"border-radius: 12px;"));
-        powerButton_2 = new QPushButton(systemDisplay_2);
-        powerButton_2->setObjectName("powerButton_2");
-        powerButton_2->setGeometry(QRect(10, 70, 91, 31));
-        powerButton_2->setStyleSheet(QString::fromUtf8("background-color: rgb(199, 199, 199);\n"
+"  border-radius: 12px;\n"
+"}\n"
+"\n"
+"QPushButton[on=\"true\"] {\n"
+"  border: 4px solid yellow;\n"
+"}\n"
+""));
+        nonShockableButton = new QPushButton(systemDisplay_2);
+        nonShockableButton->setObjectName("nonShockableButton");
+        nonShockableButton->setGeometry(QRect(100, 30, 141, 31));
+        nonShockableButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"  background-color: rgb(199, 199, 199);\n"
 "  border: none;\n"
 "  color: black;\n"
 "  text-align: center;\n"
@@ -256,10 +331,56 @@ public:
 "  font-size: 16px;\n"
 "  border: 1px solid black;\n"
 "  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);\n"
-"border-radius: 12px;"));
+"  border-radius: 12px;\n"
+"}\n"
+"\n"
+"QPushButton[on=\"true\"] {\n"
+"  border: 4px solid yellow;\n"
+"}\n"
+""));
+        weekCompressionButton = new QPushButton(systemDisplay_2);
+        weekCompressionButton->setObjectName("weekCompressionButton");
+        weekCompressionButton->setGeometry(QRect(340, 30, 181, 31));
+        weekCompressionButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"  background-color: rgb(199, 199, 199);\n"
+"  border: none;\n"
+"  color: black;\n"
+"  text-align: center;\n"
+"  text-decoration: none;\n"
+"  display: inline-block;\n"
+"  font-size: 16px;\n"
+"  border: 1px solid black;\n"
+"  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);\n"
+"  border-radius: 12px;\n"
+"}\n"
+"\n"
+"QPushButton[on=\"true\"] {\n"
+"  border: 4px solid yellow;\n"
+"}\n"
+""));
+        batteryButton = new QPushButton(systemDisplay_2);
+        batteryButton->setObjectName("batteryButton");
+        batteryButton->setGeometry(QRect(250, 30, 81, 31));
+        batteryButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"  background-color: rgb(199, 199, 199);\n"
+"  border: none;\n"
+"  color: black;\n"
+"  text-align: center;\n"
+"  text-decoration: none;\n"
+"  display: inline-block;\n"
+"  font-size: 16px;\n"
+"  border: 1px solid black;\n"
+"  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);\n"
+"  border-radius: 12px;\n"
+"}\n"
+"\n"
+"QPushButton[on=\"true\"] {\n"
+"  border: 4px solid yellow;\n"
+"}\n"
+""));
         upButton_6 = new QPushButton(systemDisplay);
         upButton_6->setObjectName("upButton_6");
-        upButton_6->setGeometry(QRect(170, 380, 211, 151));
+        upButton_6->setGeometry(QRect(60, 470, 211, 151));
         upButton_6->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    border-radius: 10px; /* Adjust as necessary to make it circular */\n"
 "        background-color: transparent;\n"
@@ -291,7 +412,7 @@ public:
         upButton_7->setIconSize(QSize(200, 200));
         upButton_8 = new QPushButton(systemDisplay);
         upButton_8->setObjectName("upButton_8");
-        upButton_8->setGeometry(QRect(760, 190, 211, 171));
+        upButton_8->setGeometry(QRect(390, 130, 211, 171));
         upButton_8->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    border-radius: 10px; /* Adjust as necessary to make it circular */\n"
 "        background-color: transparent;\n"
@@ -307,7 +428,7 @@ public:
         upButton_8->setIconSize(QSize(200, 200));
         upButton_9 = new QPushButton(systemDisplay);
         upButton_9->setObjectName("upButton_9");
-        upButton_9->setGeometry(QRect(630, 390, 211, 171));
+        upButton_9->setGeometry(QRect(740, 470, 211, 171));
         upButton_9->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    border-radius: 10px; /* Adjust as necessary to make it circular */\n"
 "        background-color: transparent;\n"
@@ -321,49 +442,101 @@ public:
         icon7.addFile(QString::fromUtf8(":/public/aed3.png"), QSize(), QIcon::Normal, QIcon::Off);
         upButton_9->setIcon(icon7);
         upButton_9->setIconSize(QSize(200, 200));
-        downButton_8 = new QPushButton(systemDisplay);
-        downButton_8->setObjectName("downButton_8");
-        downButton_8->setGeometry(QRect(190, 320, 31, 31));
-        downButton_8->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 15px; /* Adjust as necessary to make it circular */\n"
-"    border: 1px solid #000; /* Optional: adds a border */\n"
-"        background-color: yellow;\n"
+        step1Light = new QPushButton(systemDisplay);
+        step1Light->setObjectName("step1Light");
+        step1Light->setGeometry(QRect(190, 320, 31, 31));
+        step1Light->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"yellow\"] {\n"
+"    background-color: yellow;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"red\"] {\n"
+"    background-color: red;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"white\"] {\n"
+"    background-color: white;\n"
 "}\n"
 ""));
-        downButton_8->setIconSize(QSize(42, 42));
-        downButton_9 = new QPushButton(systemDisplay);
-        downButton_9->setObjectName("downButton_9");
-        downButton_9->setGeometry(QRect(250, 440, 31, 31));
-        downButton_9->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 15px; /* Adjust as necessary to make it circular */\n"
-"    border: 1px solid #000; /* Optional: adds a border */\n"
-"        background-color: white;\n"
+        step1Light->setIconSize(QSize(42, 42));
+        step5Light = new QPushButton(systemDisplay);
+        step5Light->setObjectName("step5Light");
+        step5Light->setGeometry(QRect(190, 490, 31, 31));
+        step5Light->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"yellow\"] {\n"
+"    background-color: yellow;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"red\"] {\n"
+"    background-color: red;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"white\"] {\n"
+"    background-color: white;\n"
 "}\n"
 ""));
-        downButton_9->setIconSize(QSize(42, 42));
-        downButton_10 = new QPushButton(systemDisplay);
-        downButton_10->setObjectName("downButton_10");
-        downButton_10->setGeometry(QRect(780, 330, 31, 31));
-        downButton_10->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 15px; /* Adjust as necessary to make it circular */\n"
-"    border: 1px solid #000; /* Optional: adds a border */\n"
-"        background-color: white;\n"
+        step5Light->setIconSize(QSize(42, 42));
+        step2Light = new QPushButton(systemDisplay);
+        step2Light->setObjectName("step2Light");
+        step2Light->setGeometry(QRect(410, 270, 31, 31));
+        step2Light->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"yellow\"] {\n"
+"    background-color: yellow;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"red\"] {\n"
+"    background-color: red;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"white\"] {\n"
+"    background-color: white;\n"
 "}\n"
 ""));
-        downButton_10->setIconSize(QSize(42, 42));
-        downButton_11 = new QPushButton(systemDisplay);
-        downButton_11->setObjectName("downButton_11");
-        downButton_11->setGeometry(QRect(770, 400, 31, 31));
-        downButton_11->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border-radius: 15px; /* Adjust as necessary to make it circular */\n"
-"    border: 1px solid #000; /* Optional: adds a border */\n"
-"        background-color: white;\n"
+        step2Light->setIconSize(QSize(42, 42));
+        step4Light = new QPushButton(systemDisplay);
+        step4Light->setObjectName("step4Light");
+        step4Light->setGeometry(QRect(730, 520, 31, 31));
+        step4Light->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"yellow\"] {\n"
+"    background-color: yellow;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"red\"] {\n"
+"    background-color: red;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"white\"] {\n"
+"    background-color: white;\n"
 "}\n"
 ""));
-        downButton_11->setIconSize(QSize(42, 42));
+        step4Light->setIconSize(QSize(42, 42));
         consoleView = new QGroupBox(systemDisplay);
         consoleView->setObjectName("consoleView");
-        consoleView->setGeometry(QRect(0, 570, 291, 71));
+        consoleView->setGeometry(QRect(0, 700, 501, 71));
         consoleView->setStyleSheet(QString::fromUtf8("\n"
 "QGroupBox {\n"
 "    background-color: #A9A9A9;\n"
@@ -381,7 +554,7 @@ public:
         consoleView->setFlat(true);
         consoleText = new QPlainTextEdit(consoleView);
         consoleText->setObjectName("consoleText");
-        consoleText->setGeometry(QRect(0, 20, 291, 51));
+        consoleText->setGeometry(QRect(0, 20, 501, 51));
         consoleText->setStyleSheet(QString::fromUtf8("QPlainTextEdit {\n"
 "    background-color: rgb(255, 255, 255);\n"
 "    color: rgb(0, 0, 0);    \n"
@@ -391,6 +564,45 @@ public:
 "}\n"
 ""));
         consoleText->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+        upButton_10 = new QPushButton(systemDisplay);
+        upButton_10->setObjectName("upButton_10");
+        upButton_10->setGeometry(QRect(730, 230, 211, 171));
+        upButton_10->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 10px; /* Adjust as necessary to make it circular */\n"
+"        background-color: transparent;\n"
+"        background-size: cover;\n"
+"        display: flex;\n"
+"        justify-content: center;\n"
+"        align-items: center;\n"
+"}\n"
+""));
+        QIcon icon8;
+        icon8.addFile(QString::fromUtf8(":/public/aed5.png"), QSize(), QIcon::Normal, QIcon::Off);
+        upButton_10->setIcon(icon8);
+        upButton_10->setIconSize(QSize(200, 200));
+        step3Light = new QPushButton(systemDisplay);
+        step3Light->setObjectName("step3Light");
+        step3Light->setGeometry(QRect(730, 360, 31, 31));
+        step3Light->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border-radius: 15px;\n"
+"    border: 1px solid #000;\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"yellow\"] {\n"
+"    background-color: yellow;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"red\"] {\n"
+"    background-color: red;\n"
+"}\n"
+"\n"
+"QPushButton[status=\"white\"] {\n"
+"    background-color: white;\n"
+"}\n"
+""));
+        step3Light->setIconSize(QSize(42, 42));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -409,9 +621,9 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         systemDisplay->setTitle(QString());
-        downButton_2->setText(QString());
-        helpButton->setText(QString());
-        elevatorNumber->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        statusLight4->setText(QString());
+        shockButton->setText(QString());
+        statusDisplay->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "hr { height: 1px; border-width: 0; }\n"
@@ -419,13 +631,13 @@ public:
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:64pt; font-weight:700; color:#e7f579;\">STATUS</span></p></body></html>", nullptr));
-        upButton_3->setText(QString());
-        downButton_3->setText(QString());
-        downButton_4->setText(QString());
-        downButton_5->setText(QString());
-        upButton_4->setText(QString());
-        upButton_5->setText(QString());
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:64pt; font-weight:700; color:#ff2600;\">OFF</span></p></body></html>", nullptr));
+        onButton->setText(QString());
+        statusLight3->setText(QString());
+        statusLight1->setText(QString());
+        statusLight2->setText(QString());
+        checkMark->setText(QString());
+        xMark->setText(QString());
         elevatorNumber_2->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -433,27 +645,31 @@ public:
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:72pt; font-weight:700; color:#009cfa;\">AED</span></p></body></html>", nullptr));
-        elevatorNumber_3->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:48pt; font-weight:700; color:#009cfa;\">AED</span></p></body></html>", nullptr));
+        heartBeatDisplay->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:36pt; color:#008007;\">__/\\_/\\___/\\__/\\____/\\_/\\______/\\_____</span></p></body></html>", nullptr));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
         systemDisplay_2->setTitle(QCoreApplication::translate("MainWindow", "TEST CASES", nullptr));
-        powerButton->setText(QCoreApplication::translate("MainWindow", "BATTERY", nullptr));
-        powerButton_2->setText(QCoreApplication::translate("MainWindow", "DEATH", nullptr));
+        normalButton->setText(QCoreApplication::translate("MainWindow", "NORMAL", nullptr));
+        nonShockableButton->setText(QCoreApplication::translate("MainWindow", "NON SHOCKABLE", nullptr));
+        weekCompressionButton->setText(QCoreApplication::translate("MainWindow", "WEAK COMPRESSIONS", nullptr));
+        batteryButton->setText(QCoreApplication::translate("MainWindow", "BATTERY", nullptr));
         upButton_6->setText(QString());
         upButton_7->setText(QString());
         upButton_8->setText(QString());
         upButton_9->setText(QString());
-        downButton_8->setText(QString());
-        downButton_9->setText(QString());
-        downButton_10->setText(QString());
-        downButton_11->setText(QString());
+        step1Light->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
+        step5Light->setText(QCoreApplication::translate("MainWindow", "5", nullptr));
+        step2Light->setText(QCoreApplication::translate("MainWindow", "2", nullptr));
+        step4Light->setText(QCoreApplication::translate("MainWindow", "4", nullptr));
         consoleView->setTitle(QCoreApplication::translate("MainWindow", "SYSTEM VOICE", nullptr));
+        upButton_10->setText(QString());
+        step3Light->setText(QCoreApplication::translate("MainWindow", "3", nullptr));
     } // retranslateUi
 
 };

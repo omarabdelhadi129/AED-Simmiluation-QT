@@ -683,6 +683,14 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h \
+  /Users/omarabdelhadi/Desktop/COMP\ 3004/project/COMP-3004/AED_SIM/AedInstruction.h \
+  /Users/omarabdelhadi/Desktop/COMP\ 3004/project/COMP-3004/AED_SIM/AedStates.h \
+  /Users/omarabdelhadi/Desktop/COMP\ 3004/project/COMP-3004/AED_SIM/SelfTest.h \
+  /Users/omarabdelhadi/Desktop/COMP\ 3004/project/COMP-3004/AED_SIM/ShockButton.h \
+  /Users/omarabdelhadi/Desktop/COMP\ 3004/project/COMP-3004/AED_SIM/TestCases.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/QRegularExpression \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
@@ -696,6 +704,7 @@
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qatomic.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qbasicatomic.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qbasictimer.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qbindingstorage.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearray.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
@@ -725,6 +734,7 @@
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qhash.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
@@ -751,6 +761,7 @@
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qregularexpression.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qset.h \
@@ -781,6 +792,7 @@
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtdeprecationmarkers.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtenvironmentvariables.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtextstream.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtimer.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtnoop.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtpreprocessorsupport.h \
@@ -791,6 +803,7 @@
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtversionchecks.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qtypes.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qurl.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
@@ -809,20 +822,30 @@
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qpicture.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qpolygon.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qtextdocument.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QStyle \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qpushbutton.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
+  /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qstyle.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /Users/omarabdelhadi/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \

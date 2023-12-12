@@ -294,6 +294,36 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/AedInstruction.h",
+			"MU",
+			"EWIEGA46WW/moc_AedInstruction.cpp",
+			null
+		],
+		[
+			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/AedStates.h",
+			"MU",
+			"EWIEGA46WW/moc_AedStates.cpp",
+			null
+		],
+		[
+			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/SelfTest.h",
+			"MU",
+			"EWIEGA46WW/moc_SelfTest.cpp",
+			null
+		],
+		[
+			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/ShockButton.h",
+			"MU",
+			"EWIEGA46WW/moc_ShockButton.cpp",
+			null
+		],
+		[
+			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/TestCases.h",
+			"MU",
+			"EWIEGA46WW/moc_TestCases.cpp",
+			null
+		],
+		[
 			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -357,6 +387,26 @@
 	"SETTINGS_FILE" : "/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/build-AED_SIM-Qt_6_6_0_for_macOS-Debug/CMakeFiles/AED_SIM_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/AedInstruction.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/SelfTest.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/ShockButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/TestCases.cpp",
+			"MU",
+			null
+		],
 		[
 			"/Users/omarabdelhadi/Desktop/COMP 3004/project/COMP-3004/AED_SIM/main.cpp",
 			"MU",
